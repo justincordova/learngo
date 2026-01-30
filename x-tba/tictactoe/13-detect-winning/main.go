@@ -28,9 +28,7 @@ var (
 	wrongMove bool             // was the last move wrong?
 )
 
-//
 // VERSION 2: HELPER FUNC
-//
 func main() {
 	printBoard()
 	wait()

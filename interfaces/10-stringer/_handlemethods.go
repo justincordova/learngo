@@ -13,10 +13,12 @@
 // var pocket money = 10
 // fmt.Println(pocket)
 
-//            the argument can be any type of value
-//      stores the pocket variable in the argument variable
-//                            ^
-//                            |
+//	the argument can be any type of value
+//
+// stores the pocket variable in the argument variable
+//
+//	^
+//	|
 func (p *pp) handleMethods(argument interface{}) (handled bool) {
 	// ...
 

@@ -22,7 +22,6 @@ func main() {
 
 	// ^-- same:
 
-
 	guess := 10
 
 	for n := 0; n != guess; {

@@ -120,12 +120,10 @@ func main() {
 	s.Show("6th step", clone, sliced)
 }
 
-//
 // Don't mind about this function.
 //
 // For printing the slices: You can either use the
 // prettyslice package or `fmt.Printf`.
-//
 func init() {
 	s.PrintBacking = true // prints the backing array
 	s.MaxPerLine = 10     // prints 10 slice elements per line

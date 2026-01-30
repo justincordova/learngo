@@ -24,11 +24,11 @@ type book struct {
 
 // book type's print method takes priority.
 //
-// + when you call it on a book value, the following method will
-//   be executed.
+//   - when you call it on a book value, the following method will
+//     be executed.
 //
-// + if it wasn't here, the product type's print method would
-//   have been executed.
+//   - if it wasn't here, the product type's print method would
+//     have been executed.
 func (b *book) print() {
 	// the book can also call the embedded product's print method
 	// if it wants to, as in here:

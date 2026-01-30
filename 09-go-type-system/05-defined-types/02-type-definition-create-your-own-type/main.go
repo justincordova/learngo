@@ -15,7 +15,6 @@ import (
 // type definitions usually declared at the package level
 //
 // EXERCISE: Move the declaration into main()'s scope
-//
 type (
 	gram  float64 // float64 is the underlying type of gram
 	ounce float64 // float64 is the underlying type of ounce

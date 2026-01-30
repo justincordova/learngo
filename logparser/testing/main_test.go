@@ -6,6 +6,7 @@
 // In-person training  : https://www.linkedin.com/in/inancgumus/
 // Follow me on twitter: https://twitter.com/inancgumus
 
+//go:build integration
 // +build integration
 
 // go test -tags=integration

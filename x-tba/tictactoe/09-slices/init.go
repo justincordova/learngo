@@ -36,6 +36,6 @@ func initCells() {
 	// Or:
 	cells = make([]string, maxTurns)
 	for i := range cells {
-	  cells[i] = emptyCell
+		cells[i] = emptyCell
 	}
 }

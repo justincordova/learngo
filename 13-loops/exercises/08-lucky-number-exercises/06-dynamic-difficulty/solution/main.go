@@ -47,7 +47,7 @@ func main() {
 		fmt.Println("Please pick a positive number.")
 		return
 	}
-	
+
 	var balancer int
 	if guess > 10 {
 		balancer = guess / 4

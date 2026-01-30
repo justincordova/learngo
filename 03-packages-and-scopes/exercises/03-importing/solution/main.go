@@ -8,9 +8,12 @@
 
 package main
 
-import "fmt"
-import f "fmt"
-import fm "fmt"
+import (
+	"fmt"
+	f "fmt"
+
+	fm "fmt"
+)
 
 func main() {
 	fmt.Println("hello")
