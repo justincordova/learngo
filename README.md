@@ -34,3 +34,4 @@ I am using the excellent resources and exercises from the [learngo](https://gith
 - [ ] 26-pointers
 - [ ] 27-error-handling
 - [ ] 28-generics
+- [ ] 29-concurrency
