@@ -32,7 +32,7 @@ func main() {
 		strings.Repeat("-", 45))
 
 	for n := start; n <= stop; n++ {
-		fmt.Printf("%-10c %-10[1]d %-10[1]x % -12x\n", n, string(n))
+		fmt.Printf("%-10c %-10[1]d %-10[1]x % -12x\n", n, string(rune(n)))
 	}
 }
 
