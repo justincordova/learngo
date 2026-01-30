@@ -8,7 +8,7 @@
 
 package main
 
-import "math/rand"
+import "math/rand/v2"
 
 // play plays the game for the current player.
 // + registers the player's move in the board.
@@ -28,7 +28,7 @@ func play() {
 
 	// pick a random move (very intelligent AI!)
 	// it can play to the same position!
-	lastPos = rand.Intn(maxTurns)
+	lastPos = rand.IntN(maxTurns)
 
 	// is it a valid move?
 	if cells[lastPos] != emptyCell {

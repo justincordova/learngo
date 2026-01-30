@@ -10,7 +10,6 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
 	"os"
 	"strconv"
 	"time"
@@ -19,7 +18,6 @@ import (
 // init is another special function
 // Go calls it before the main function
 func init() {
-	rand.Seed(time.Now().UnixNano())
 	initCells()
 }
 

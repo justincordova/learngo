@@ -10,10 +10,9 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 	"os"
 	"strconv"
-	"time"
 )
 
 const (
@@ -32,8 +31,6 @@ Wanna play?
 )
 
 func main() {
-	rand.Seed(time.Now().UnixNano())
-
 	args := os.Args[1:]
 	if len(args) != 1 {
 		fmt.Printf(usage, maxTurns)
@@ -57,14 +54,14 @@ func main() {
 	}
 
 	for turn := 0; turn < maxTurns; turn++ {
-		n := rand.Intn(guess + 1)
+		n := rand.IntN(guess + 1)
 
 		if verbose {
 			fmt.Printf("%d ", n)
 		}
 
 		if n == guess {
-			switch rand.Intn(3) {
+			switch rand.IntN(3) {
 			case 0:
 				fmt.Println("🎉  YOU WIN!")
 			case 1:
@@ -76,8 +73,8 @@ func main() {
 		}
 	}
 
-	// msg, n := "%s Try again?\n", rand.Intn(5)
-	// if msg, n := "%s Try again?\n", rand.Intn(5); n <= 2 {
+	// msg, n := "%s Try again?\n", rand.IntN(5)
+	// if msg, n := "%s Try again?\n", rand.IntN(5); n <= 2 {
 	// 	fmt.Printf(msg, "☠️  YOU LOST...")
 	// } else if n < 3 {
 	// 	fmt.Printf(msg, "☠️  JUST A BAD LUCK...")
@@ -86,7 +83,7 @@ func main() {
 	// }
 
 	// var msg string
-	// switch rand.Intn(10) {
+	// switch rand.IntN(10) {
 	// // more probability
 	// case 0, 1, 2, 3, 4, 5:
 	// 	msg = "☠️  YOU LOST..."
@@ -98,7 +95,7 @@ func main() {
 	// fmt.Printf("%s Try again?\n", msg)
 
 	var msg string
-	switch n := rand.Intn(10); {
+	switch n := rand.IntN(10); {
 	// more probability
 	case n <= 5:
 		msg = "☠️  YOU LOST..."

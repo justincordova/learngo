@@ -10,9 +10,8 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 	"strings"
-	"time"
 
 	rainbow "github.com/guineveresaenger/golang-rainbow"
 )
@@ -51,7 +50,6 @@ var (
 )
 
 func main() {
-	rand.Seed(time.Now().UnixNano())
 	rainbow.Rainbow(banner, strings.Count(banner, "\n"))
 
 	for {
@@ -110,7 +108,7 @@ func main() {
 		// PLAY
 		// -------------------------------------------------
 
-		pos := rand.Intn(9) + 1
+		pos := rand.IntN(9) + 1
 		fmt.Printf("\nPlayer %s plays to %d\n", player, pos)
 
 		// -------------------------------------------------
