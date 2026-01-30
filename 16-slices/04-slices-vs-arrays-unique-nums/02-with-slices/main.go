@@ -10,16 +10,13 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 	"os"
 	"sort"
 	"strconv"
-	"time"
 )
 
 func main() {
-	rand.Seed(time.Now().UnixNano())
-
 	max, _ := strconv.Atoi(os.Args[1])
 
 	// declare an uninitialized nil slice
@@ -28,7 +25,7 @@ func main() {
 loop:
 	// you can still use the len function on a nil slice
 	for len(uniques) < max {
-		n := rand.Intn(max) + 1
+		n := rand.IntN(max) + 1
 		fmt.Print(n, " ")
 
 		for _, u := range uniques {
