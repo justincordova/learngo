@@ -79,7 +79,6 @@ func ioCopy(dst, src *os.File) error {
 			return er
 		}
 	}
-	return nil
 }
 
 // write example.
@@ -111,5 +110,4 @@ func read(src *os.File) error {
 			return er
 		}
 	}
-	return nil
 }

@@ -58,5 +58,4 @@ func ioCopy(dst, src *os.File) error {
 			return er
 		}
 	}
-	return nil
 }
