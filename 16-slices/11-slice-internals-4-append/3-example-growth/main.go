@@ -9,7 +9,7 @@
 package main
 
 import (
-	"math/rand"
+	"math/rand/v2"
 	"time"
 
 	s "github.com/inancgumus/prettyslice"
@@ -28,7 +28,7 @@ func main() {
 		screen.MoveTopLeft()
 
 		s.Show("nums", nums)
-		nums = append(nums, rand.Intn(9)+1)
+		nums = append(nums, rand.IntN(9)+1)
 
 		time.Sleep(time.Second / 4)
 	}

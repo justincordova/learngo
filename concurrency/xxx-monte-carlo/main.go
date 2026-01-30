@@ -11,7 +11,7 @@ package main
 import (
 	"fmt"
 	"math"
-	"math/rand"
+	"math/rand/v2"
 	"os"
 	"runtime"
 	"strconv"
@@ -64,14 +64,10 @@ func spread(samples int, P int) (estimated float64) {
 func estimate(N int) float64 {
 	const radius = 1.0
 
-	var (
-		seed   = rand.NewSource(time.Now().UnixNano())
-		random = rand.New(seed)
-		inside int
-	)
+	var inside int
 
 	for i := 0; i < N; i++ {
-		x, y := random.Float64(), random.Float64()
+		x, y := rand.Float64(), rand.Float64()
 
 		if num := math.Sqrt(x*x + y*y); num < radius {
 			inside++

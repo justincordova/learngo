@@ -10,16 +10,12 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
 )
 
 // RUN IT WITH ALL THE FILES IN THE DIRECTORY LIKE SO:
 // go run .
 
 func main() {
-	rand.Seed(time.Now().UnixNano())
-
 	var (
 		blender Blender
 		player  Player
