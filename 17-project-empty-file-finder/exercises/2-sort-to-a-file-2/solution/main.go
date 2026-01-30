@@ -10,7 +10,6 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"os"
 	"sort"
 	"strconv"
@@ -33,7 +32,7 @@ func main() {
 		data = append(data, '\n')
 	}
 
-	err := ioutil.WriteFile("sorted.txt", data, 0644)
+	err := os.WriteFile("sorted.txt", data, 0644)
 	if err != nil {
 		fmt.Println(err)
 		return

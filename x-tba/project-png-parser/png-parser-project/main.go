@@ -12,7 +12,6 @@ import (
 	"bytes"
 	"encoding/binary"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"runtime"
 )
@@ -27,7 +26,7 @@ func main() {
 	// this is not the best way
 	// it's better only to read the first 24 bytes
 	// this reads the whole file into memory
-	img, err := ioutil.ReadFile(args[0])
+	img, err := os.ReadFile(args[0])
 	if err != nil {
 		fmt.Println(err)
 		return

@@ -10,7 +10,6 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"os"
 )
 
@@ -21,7 +20,7 @@ func main() {
 		return
 	}
 
-	files, err := ioutil.ReadDir(args[0])
+	files, err := os.ReadDir(args[0])
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -30,7 +29,12 @@ func main() {
 	var names []byte
 
 	for _, file := range files {
-		if file.Size() == 0 {
+		info, err := file.Info()
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
+		if info.Size() == 0 {
 			name := file.Name()
 
 			fmt.Println(cap(names))
@@ -39,7 +43,7 @@ func main() {
 		}
 	}
 
-	err = ioutil.WriteFile("out.txt", names, 0644)
+	err = os.WriteFile("out.txt", names, 0644)
 	if err != nil {
 		fmt.Println(err)
 		return

@@ -11,7 +11,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"strconv"
 	"strings"
@@ -152,7 +151,7 @@ func main() {
 		}
 	}
 
-	if err := ioutil.WriteFile("replay.log", inputs, 0644); err != nil {
+	if err := os.WriteFile("replay.log", inputs, 0644); err != nil {
 		fmt.Fprintf(os.Stderr, "Cannot save replay: %v", err)
 	}
 }

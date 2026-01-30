@@ -47,7 +47,7 @@ package main
 //
 //   ONLY READ THIS IF YOU GET STUCK
 //
-//   + Get all the files in a directory using ioutil.ReadDir
+//   + Get all the files in a directory using os.ReadDir
 //     (A directory is also a file)
 //
 //   + You can use IsDir method of a FileInfo value to detect

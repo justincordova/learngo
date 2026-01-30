@@ -11,7 +11,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"os"
 	"strings"
 )
 
@@ -24,7 +24,7 @@ type Wizard struct {
 }
 
 func main() {
-	file, err := ioutil.ReadFile("../marshal/wizards.json")
+	file, err := os.ReadFile("../marshal/wizards.json")
 	if err != nil {
 		panic(err)
 	}

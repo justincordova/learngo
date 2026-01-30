@@ -67,7 +67,7 @@ func fetchStarship(ctx context.Context, id int) (ship Starship, err error) {
 	}
 
 	// -> If your response body is small enough,
-	//    just read it all into memory using ioutil.ReadAll
+	//    just read it all into memory using io.ReadAll
 	//    and use json.Unmarshal.
 	//
 	// -> Do not use json.Decoder if you are not dealing

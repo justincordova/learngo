@@ -12,7 +12,6 @@ import (
 	"context"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"net/http"
 )
 
@@ -48,5 +47,5 @@ func request(ctx context.Context, url string) ([]byte, error) {
 	// Prevents the api to shoot us unlimited amount of data
 	r := io.LimitReader(resp.Body, MaxResponseSize)
 
-	return ioutil.ReadAll(r)
+	return io.ReadAll(r)
 }

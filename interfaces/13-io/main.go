@@ -34,7 +34,7 @@ func main() {
 
 	// #2b: reads the entire file content into memory.
 	// ------------------------------------------------
-	// buf, err := ioutil.ReadFile("alice.txt")
+	// buf, err := os.ReadFile("alice.txt")
 	// if err != nil {
 	// 	fmt.Fprintln(os.Stderr, err)
 	// 	return

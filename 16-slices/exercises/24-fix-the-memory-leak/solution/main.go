@@ -10,7 +10,7 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"io"
 
 	"github.com/inancgumus/learngo/16-slices/exercises/24-fix-the-memory-leak/solution/api"
 )
@@ -49,5 +49,5 @@ func main() {
 	api.Report()
 
 	// don't worry about this code yet.
-	fmt.Fprintln(ioutil.Discard, millions[0])
+	fmt.Fprintln(io.Discard, millions[0])
 }

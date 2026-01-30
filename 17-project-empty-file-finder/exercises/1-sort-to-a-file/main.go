@@ -37,10 +37,10 @@ package main
 //
 //   + String slices are sortable using `sort.Strings`
 //
-//   + Use ioutil.WriteFile to write to a file.
+//   + Use os.WriteFile to write to a file.
 //
 //   + But you need to convert []string to []byte to be able to
-//     write it to a file using the ioutil.WriteFile.
+//     write it to a file using the os.WriteFile.
 //
 //   + To do that, create a new []byte and append the elements of your
 //     []string.

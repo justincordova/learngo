@@ -15,7 +15,7 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"os"
 	"runtime"
 
 	s "github.com/inancgumus/prettyslice"
@@ -30,7 +30,7 @@ var buf []byte
 
 func main() {
 	{
-		b, _ := ioutil.ReadFile(file)
+		b, _ := os.ReadFile(file)
 		buf = b[:1]
 
 		s.Show("sliced buf", buf)
@@ -40,7 +40,7 @@ func main() {
 	{
 		var nilBuf []byte
 
-		b, _ := ioutil.ReadFile(file)
+		b, _ := os.ReadFile(file)
 		buf = append(nilBuf, b[:1]...)
 
 		s.Show("copied buf", buf)

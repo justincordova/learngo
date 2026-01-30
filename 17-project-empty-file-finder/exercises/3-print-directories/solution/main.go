@@ -10,7 +10,6 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"os"
 )
 
@@ -24,7 +23,7 @@ func main() {
 	var dirs []byte
 
 	for _, dir := range paths {
-		files, err := ioutil.ReadDir(dir)
+		files, err := os.ReadDir(dir)
 		if err != nil {
 			fmt.Println(err)
 			return
@@ -44,7 +43,7 @@ func main() {
 		dirs = append(dirs, '\n')
 	}
 
-	err := ioutil.WriteFile("dirs.txt", dirs, 0644)
+	err := os.WriteFile("dirs.txt", dirs, 0644)
 	if err != nil {
 		fmt.Println(err)
 		return

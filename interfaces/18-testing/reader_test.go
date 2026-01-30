@@ -1,7 +1,7 @@
 package main
 
 import (
-	"io/ioutil"
+	"io"
 	"strings"
 	"testing"
 )
@@ -12,7 +12,7 @@ func TestCorrectSignature(t *testing.T) {
 
 	pr := pngReader(strings.NewReader(input))
 
-	out, err := ioutil.ReadAll(pr)
+	out, err := io.ReadAll(pr)
 	if err != nil {
 		t.Fatalf("got: %q; want: nil err", err)
 	}
@@ -28,10 +28,10 @@ func TestIncorrectSignature(t *testing.T) {
 	// It's an io.Reader implementation.
 	pr := pngReader(strings.NewReader(input))
 
-	// `ioutil.ReadAll` is a dangerous but useful utility function
+	// `io.ReadAll` is a dangerous but useful utility function
 	// that can read all the data from a reader into memory.
 	// Don't use it for large (?) data.
-	_, err := ioutil.ReadAll(pr)
+	_, err := io.ReadAll(pr)
 	if err == nil {
 		t.Fatalf("got: %v; want: !nil err", err)
 	}
