@@ -32,3 +32,5 @@ I am using the excellent resources and exercises from the [learngo](https://gith
 - [ ] 24-structs
 - [ ] 25-functions
 - [ ] 26-pointers
+- [ ] 27-error-handling
+- [ ] 28-generics
