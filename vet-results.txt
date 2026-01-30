@@ -1,0 +1,53 @@
+# github.com/inancgumus/learngo/logparser/functional
+# [github.com/inancgumus/learngo/logparser/functional]
+logparser/functional/textwriter.go:41:18: non-constant format string in call to fmt.Fprintf
+# github.com/inancgumus/learngo/x-tba/tictactoe/05-testing
+# [github.com/inancgumus/learngo/x-tba/tictactoe/05-testing]
+x-tba/tictactoe/05-testing/board_test.go:14:1: ExamplePrintBoard refers to unknown identifier: PrintBoard
+# github.com/inancgumus/learngo/x-tba/tictactoe/06-if-switch
+# [github.com/inancgumus/learngo/x-tba/tictactoe/06-if-switch]
+x-tba/tictactoe/06-if-switch/board_test.go:14:1: ExamplePrintBoard refers to unknown identifier: PrintBoard
+# github.com/inancgumus/learngo/x-tba/tictactoe/07-loop
+# [github.com/inancgumus/learngo/x-tba/tictactoe/07-loop]
+x-tba/tictactoe/07-loop/board_test.go:14:1: ExamplePrintBoard refers to unknown identifier: PrintBoard
+# github.com/inancgumus/learngo/x-tba/tictactoe/08-multi-loop
+# [github.com/inancgumus/learngo/x-tba/tictactoe/08-multi-loop]
+x-tba/tictactoe/08-multi-loop/board_test.go:14:1: ExamplePrintBoard refers to unknown identifier: PrintBoard
+# github.com/inancgumus/learngo/x-tba/tictactoe/10-arrays
+# [github.com/inancgumus/learngo/x-tba/tictactoe/10-arrays]
+x-tba/tictactoe/10-arrays/board_test.go:14:1: ExamplePrintBoard refers to unknown identifier: PrintBoard
+x-tba/tictactoe/10-arrays/board_test.go:32:1: ExamplePrintBoardCells refers to unknown identifier: PrintBoardCells
+# github.com/inancgumus/learngo/x-tba/tictactoe/09-slices
+# [github.com/inancgumus/learngo/x-tba/tictactoe/09-slices]
+x-tba/tictactoe/09-slices/board_test.go:14:1: ExamplePrintBoard refers to unknown identifier: PrintBoard
+x-tba/tictactoe/09-slices/board_test.go:32:1: ExamplePrintBoardCells refers to unknown identifier: PrintBoardCells
+# github.com/inancgumus/learngo/x-tba/tictactoe/11-randomization
+# [github.com/inancgumus/learngo/x-tba/tictactoe/11-randomization]
+x-tba/tictactoe/11-randomization/board_test.go:14:1: ExamplePrintBoard refers to unknown identifier: PrintBoard
+x-tba/tictactoe/11-randomization/board_test.go:31:1: ExamplePrintBoardCells refers to unknown identifier: PrintBoardCells
+# github.com/inancgumus/learngo/x-tba/tictactoe/12-infinite-loop
+# [github.com/inancgumus/learngo/x-tba/tictactoe/12-infinite-loop]
+x-tba/tictactoe/12-infinite-loop/board_test.go:14:1: ExamplePrintBoard refers to unknown identifier: PrintBoard
+x-tba/tictactoe/12-infinite-loop/board_test.go:31:1: ExamplePrintBoardCells refers to unknown identifier: PrintBoardCells
+# github.com/inancgumus/learngo/x-tba/tictactoe/13-detect-winning
+# [github.com/inancgumus/learngo/x-tba/tictactoe/13-detect-winning]
+x-tba/tictactoe/13-detect-winning/board_test.go:14:1: ExamplePrintBoard refers to unknown identifier: PrintBoard
+x-tba/tictactoe/13-detect-winning/board_test.go:31:1: ExamplePrintBoardCells refers to unknown identifier: PrintBoardCells
+# github.com/inancgumus/learngo/x-tba/tictactoe/15-os-args
+# [github.com/inancgumus/learngo/x-tba/tictactoe/15-os-args]
+x-tba/tictactoe/15-os-args/board_test.go:14:1: ExamplePrintBoard refers to unknown identifier: PrintBoard
+x-tba/tictactoe/15-os-args/board_test.go:31:1: ExamplePrintBoardCells refers to unknown identifier: PrintBoardCells
+# github.com/inancgumus/learngo/x-tba/tictactoe/14-more-tests
+# [github.com/inancgumus/learngo/x-tba/tictactoe/14-more-tests]
+x-tba/tictactoe/14-more-tests/board_test.go:14:1: ExamplePrintBoard refers to unknown identifier: PrintBoard
+x-tba/tictactoe/14-more-tests/board_test.go:31:1: ExamplePrintBoardCells refers to unknown identifier: PrintBoardCells
+# github.com/inancgumus/learngo/x-tba/tictactoe/16-types
+# [github.com/inancgumus/learngo/x-tba/tictactoe/16-types]
+x-tba/tictactoe/16-types/board_test.go:14:1: ExamplePrintBoard refers to unknown identifier: PrintBoard
+x-tba/tictactoe/16-types/board_test.go:31:1: ExamplePrintBoardCells refers to unknown identifier: PrintBoardCells
+# github.com/inancgumus/learngo/x-tba/tictactoe-experiments/06-refactor
+# [github.com/inancgumus/learngo/x-tba/tictactoe-experiments/06-refactor]
+x-tba/tictactoe-experiments/06-refactor/main.go:44:15: non-constant format string in call to fmt.Printf
+# github.com/inancgumus/learngo/x-tba/wizards-structs/unmarshal
+# [github.com/inancgumus/learngo/x-tba/wizards-structs/unmarshal]
+x-tba/wizards-structs/unmarshal/main.go:21:2: struct field tag `json:name` not compatible with reflect.StructTag.Get: bad syntax for struct tag value
