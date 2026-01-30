@@ -10,10 +10,9 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 	"os"
 	"strconv"
-	"time"
 )
 
 const (
@@ -30,7 +29,6 @@ Wanna play?
 )
 
 func main() {
-	rand.Seed(time.Now().UnixNano())
 
 	args := os.Args[1:]
 
@@ -51,10 +49,10 @@ func main() {
 	}
 
 	for turn := 0; turn < maxTurns; turn++ {
-		n := rand.Intn(guess) + 1
+		n := rand.IntN(guess) + 1
 
 		if n == guess {
-			switch rand.Intn(3) {
+			switch rand.IntN(3) {
 			case 0:
 				fmt.Println("🎉  YOU WIN!")
 			case 1:
@@ -68,7 +66,7 @@ func main() {
 
 	msg := "%s Try again?\n"
 
-	switch rand.Intn(2) {
+	switch rand.IntN(2) {
 	case 0:
 		fmt.Printf(msg, "☠️  YOU LOST...")
 	case 1:

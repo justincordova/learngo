@@ -10,7 +10,7 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 	"time"
 )
 
@@ -18,7 +18,7 @@ func main() {
 	for {
 		var c string
 
-		switch rand.Intn(4) {
+		switch rand.IntN(4) {
 		case 0:
 			c = "\\"
 		case 1:

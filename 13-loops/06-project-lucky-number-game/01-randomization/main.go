@@ -10,8 +10,7 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
+	"math/rand/v2"
 )
 
 func main() {
@@ -23,12 +22,11 @@ func main() {
 
 	// ^-- same:
 
-	rand.Seed(time.Now().UnixNano())
 
 	guess := 10
 
 	for n := 0; n != guess; {
-		n = rand.Intn(guess + 1)
+		n = rand.IntN(guess + 1)
 		fmt.Printf("%d ", n)
 	}
 	fmt.Println()
