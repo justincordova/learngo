@@ -35,3 +35,4 @@ I am using the excellent resources and exercises from the [learngo](https://gith
 - [ ] 27-error-handling
 - [ ] 28-generics
 - [ ] 29-concurrency
+- [ ] 30-context
