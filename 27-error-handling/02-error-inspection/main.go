@@ -24,7 +24,8 @@ var (
 
 func main() {
 	fmt.Println("Error Inspection Example")
-	fmt.Println("========================\n")
+	fmt.Println("========================")
+	fmt.Println()
 
 	// Example 1: Using errors.Is to check for specific errors
 	fmt.Println("1. Using errors.Is to check sentinel errors:")

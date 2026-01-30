@@ -15,7 +15,8 @@ import (
 
 func main() {
 	fmt.Println("Error Wrapping Example")
-	fmt.Println("======================\n")
+	fmt.Println("======================")
+	fmt.Println()
 
 	// Example 1: Reading a non-existent file
 	fmt.Println("1. Attempting to read a non-existent file:")

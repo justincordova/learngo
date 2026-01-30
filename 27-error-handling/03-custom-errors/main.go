@@ -77,7 +77,8 @@ func (e *NetworkError) Is(target error) bool {
 
 func main() {
 	fmt.Println("Custom Error Types Example")
-	fmt.Println("===========================\n")
+	fmt.Println("===========================")
+	fmt.Println()
 
 	// Example 1: ValidationError
 	fmt.Println("1. Validation error with custom fields:")
