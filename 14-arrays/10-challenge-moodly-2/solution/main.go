@@ -10,9 +10,8 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 	"os"
-	"time"
 )
 
 func main() {
@@ -29,8 +28,7 @@ func main() {
 		{"sad 😞", "bad 👎", "terrible 😩"},
 	}
 
-	rand.Seed(time.Now().UnixNano())
-	n := rand.Intn(len(moods[0]))
+	n := rand.IntN(len(moods[0]))
 
 	var mi int
 	if mood != "positive" {

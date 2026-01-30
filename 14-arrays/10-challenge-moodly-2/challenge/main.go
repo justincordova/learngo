@@ -10,9 +10,8 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 	"os"
-	"time"
 )
 
 // ---------------------------------------------------------
@@ -72,8 +71,7 @@ func main() {
 		"sad 😞", "bad 👎", "terrible 😩",
 	}
 
-	rand.Seed(time.Now().UnixNano())
-	n := rand.Intn(len(moods))
+	n := rand.IntN(len(moods))
 
 	fmt.Printf("%s feels %s\n", name, moods[n])
 }
