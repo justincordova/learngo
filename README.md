@@ -20,36 +20,6 @@ The best way to learn is by doing. Inside this repository, you will find hundred
 
 This repository is based on the excellent [learngo](https://github.com/inancgumus/learngo) repository by [Inanc Gumus](https://github.com/inancgumus), expanded and modernized for Go 1.25 using Claude Code.
 
-### New Sections Added
-
-**27-error-handling** - Modern error wrapping, inspection, and custom error types (Go 1.13+)
-
-**28-generics** - Type parameters, constraints, and generic data structures (Go 1.18+)
-
-**29-concurrency** - Goroutines, channels, mutexes, worker pools, and testing concurrent code
-
-**30-context** - Context package for cancellation, timeouts, and request-scoped values
-
-**31-modern-stdlib** - Latest Go 1.25 features:
-- `sync.WaitGroup.Go()` - Simplified goroutine spawning
-- `testing/synctest` - Deterministic testing of concurrent code with fake clocks
-- `reflect.TypeAssert[T]()` - Zero-allocation reflection for performance-critical code
-- `net/http.CrossOriginProtection()` - Built-in CSRF protection middleware
-- `encoding/json/v2` - Experimental next-generation JSON package
-
-### Modernization Updates
-
-Removed deprecated APIs:
-- `io/ioutil` replaced with `io` and `os` packages
-- `math/rand` replaced with `math/rand/v2` (Go 1.22+)
-- Deprecated `go/ast` and `go/parser` functions removed
-
-Code quality improvements:
-- Fixed all `go vet` warnings
-- Removed unused imports
-- Fixed nil pointer dereferences
-- Modern error handling patterns throughout
-
 ---
 
 ## Getting Started
@@ -185,20 +155,6 @@ Learn error handling, generics, concurrency, context, and Go 1.25 features.
 
 ---
 
-## Documentation
-
-Additional documentation available in `docs/`:
-- **go-1.25-verification.md** - Detailed compatibility verification
-- **modernization-complete.md** - Complete modernization summary
-
-Each section contains its own README with:
-- Learning objectives
-- Key concepts
-- Code examples
-- Best practices
-- Common pitfalls
-
----
 
 ## Additional Resources
 
@@ -213,8 +169,8 @@ Each section contains its own README with:
 - [Go 1.25 Blog Post](https://go.dev/blog/go1.25)
 - [Go 1.25 Interactive Tour](https://antonz.org/go-1-25/)
 
-### Original Course
-- [Inanc Gumus's Go Bootcamp](https://www.udemy.com/course/learn-go-the-complete-bootcamp-course-golang/)
+### Original Repository
+- [Inanc Gumus's learngo](https://github.com/inancgumus/learngo)
 
 ---
 
