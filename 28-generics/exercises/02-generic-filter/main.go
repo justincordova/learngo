@@ -53,6 +53,7 @@ func main() {
 	// Test 1: Working with numbers
 	fmt.Println("Test 1: Numbers")
 	numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	_ = numbers
 	// TODO: Filter even numbers
 	// TODO: Map numbers to their squares
 	// TODO: Calculate sum using Reduce
@@ -64,6 +65,7 @@ func main() {
 	// Test 2: Working with strings
 	fmt.Println("Test 2: Strings")
 	words := []string{"go", "rust", "python", "javascript", "c"}
+	_ = words
 	// TODO: Filter words with length > 3
 	// TODO: Map words to their lengths
 	// TODO: Concatenate all words using Reduce
