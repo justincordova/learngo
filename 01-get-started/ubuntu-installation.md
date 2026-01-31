@@ -86,7 +86,7 @@ Note: You may use another coding editor if you like. However, the course uses Vi
 
 ## OPTIONAL STEP:
 
-1. Create a hello.go file in a new directory but anywhere outside of `$GOPATH`
+1. Create a hello.go file in a new directory anywhere on your system
 
     ```bash
     cat <<EOF > hello.go

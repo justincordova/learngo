@@ -1,19 +1,22 @@
-## Where should you save your Go source code?
-* Anywhere on my computer
-* Under $GOPATH
-* Under $GOPATH/src *CORRECT*
+## Where to save your Go source code
 
-## What does $GOPATH mean?
-* It's a file for Go runtime
-* Stores Go source code files and compiled packages
-* It's a path for gophers to follow
+You can save your Go source code anywhere on your computer. Modern Go uses modules, so there's no restriction on project location.
 
-## Do you need to set $GOPATH?
-* Yes
-* No: It's stored on my desktop
-* No: It's stored under my user path *CORRECT*
+## What is a Go module?
 
-## How can you print $GOPATH?
-* Using `ls` command
-* Using `go env GOPATH` command *CORRECT*
-* Using `go environment` command
+A Go module is defined by a `go.mod` file at the project root. This file specifies the module path and manages dependencies.
+
+## Initializing a Go module
+
+Use `go mod init <module-path>` to create a new module:
+
+```bash
+go mod init example.com/myproject
+```
+
+## Why go.mod matters
+
+The `go.mod` file:
+- Defines your module's import path
+- Tracks all dependencies and their versions
+- Enables reproducible builds
