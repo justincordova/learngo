@@ -62,13 +62,3 @@ choco install golang
     4. **NOTE:** Normally, you can find your files under `c:\`, however, when you're using git bash, you'll find them under `/c/` directory. It's actually the very same directory, it's just a shortcut.
 
 ## That's all! Enjoy! 🤩
-
-<div style="page-break-after: always;"></div>
-
-> For more tutorials: [https://blog.learngoprogramming.com](https://blog.learngoprogramming.com)
->
-> Copyright © 2018 Inanc Gumus
->
-> Learn Go Programming Course
->
-> [Click here to read the license.](https://creativecommons.org/licenses/by-nc-sa/4.0/)

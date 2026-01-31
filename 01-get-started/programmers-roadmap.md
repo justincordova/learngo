@@ -134,13 +134,3 @@ Reference: [This Reddit post](https://www.reddit.com/r/golang/comments/5nac2b/wh
 * [Eight years of Go](https://blog.golang.org/8years)
 * [Twitter: Handling Five Billion Session in a Day with Go](https://blog.twitter.com/engineering/en_us/a/2015/handling-five-billion-sessions-a-day-in-real-time.html)
 * [A C++ developer looks at Go](https://www.murrayc.com/permalink/2017/06/26/a-c-developer-looks-at-go-the-programming-language-part-1-simple-features/)
-
-<div style="page-break-after: always;"></div>
-
-> For more tutorials: [https://blog.learngoprogramming.com](https://blog.learngoprogramming.com)
-> 
-> Copyright © 2019 Inanc Gumus
-> 
-> Learn Go Programming Course
-> 
-> [Click here to read the license.](https://creativecommons.org/licenses/by-nc-sa/4.0/)

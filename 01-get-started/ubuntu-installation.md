@@ -106,13 +106,3 @@ Note: You may use another coding editor if you like. However, the course uses Vi
     go run hello.go
     It should print: hello gopher!
     ```
-
-<div style="page-break-after: always;"></div>
-
-> For more tutorials: [https://blog.learngoprogramming.com](https://blog.learngoprogramming.com)
->
-> Copyright © 2018 Inanc Gumus
->
-> Learn Go Programming Course
->
-> [Click here to read the license.](https://creativecommons.org/licenses/by-nc-sa/4.0/)

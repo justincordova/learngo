@@ -50,13 +50,3 @@ export PATH=${HOME}/go/bin:$PATH
         1. **NOTE:** You don't have to do this if you're on Windows.
 
 ## That's all! Enjoy! 🤩
-
-<div style="page-break-after: always;"></div>
-
-> For more tutorials: [https://blog.learngoprogramming.com](https://blog.learngoprogramming.com)
-> 
-> Copyright © 2018 Inanc Gumus
-> 
-> Learn Go Programming Course
-> 
-> [Click here to read the license.](https://creativecommons.org/licenses/by-nc-sa/4.0/)
