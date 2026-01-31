@@ -11,6 +11,7 @@ package main
 import (
 	"context"
 	"fmt"
+	"io"
 	"os"
 	"strconv"
 	"time"
@@ -47,6 +48,7 @@ import (
 const timeout = 10 * time.Second
 
 func main() {
+	var _ = io.EOF
 	args := os.Args[1:]
 	quit("give me a film id", len(args) != 1)
 
