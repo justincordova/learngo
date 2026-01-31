@@ -199,7 +199,8 @@ func example5() {
 		improvement := float64(durationV1-durationV2) / float64(durationV1) * 100
 		fmt.Printf("v2 is %.1f%% faster\n\n", improvement)
 	} else {
-		fmt.Println("(Results may vary; v2 typically excels with large datasets)\n")
+		fmt.Println("(Results may vary; v2 typically excels with large datasets)")
+		fmt.Println()
 	}
 }
 
