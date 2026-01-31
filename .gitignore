@@ -37,3 +37,10 @@ go.work
 
 # AI
 .claude/
+
+# Local binaries
+/02-generic-filter
+/fetch
+/swapi-api-client
+/xxx-monte-carlo
+/power
