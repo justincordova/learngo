@@ -1,5 +1,3 @@
-*.DS_Store
-
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -7,10 +5,32 @@
 *.so
 *.dylib
 
-# Test binary, build with `go test -c`
+# Test binary, built with `go test -c`
 *.test
 
-# Output of the go coverage tool, specifically when used with LiteIDE
+# Output of the go coverage tool
 *.out
 
-.vscode/*
+# Compiled binary files (same name as directory)
+27-error-handling/01-error-wrapping/01-error-wrapping
+27-error-handling/02-error-inspection/02-error-inspection
+27-error-handling/03-custom-errors/03-custom-errors
+27-error-handling/exercises/01-wrap-file-errors/main
+29-concurrency/01-goroutines-basics/01-goroutines-basics
+29-concurrency/02-channels/02-channels
+29-concurrency/03-channel-select/03-channel-select
+29-concurrency/04-mutexes/04-mutexes
+29-concurrency/05-waitgroups/05-waitgroups
+29-concurrency/06-waitgroup-go-method/06-waitgroup-go-method
+29-concurrency/07-testing-concurrent-code/07-testing-concurrent-code
+29-concurrency/08-worker-pool/08-worker-pool
+30-context/01-context-basics/01-context-basics
+30-context/02-context-cancellation/02-context-cancellation
+30-context/03-context-timeout/03-context-timeout
+30-context/04-context-values/04-context-values
+
+# Dependency directories (in case someone uses vendor)
+vendor/
+
+# Go workspace file
+go.work
